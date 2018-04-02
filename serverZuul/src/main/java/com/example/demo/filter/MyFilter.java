@@ -1,7 +1,9 @@
 package com.example.demo.filter;
 
 import com.netflix.zuul.ZuulFilter;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MyFilter extends ZuulFilter {
     @Override
     public String filterType() {
@@ -15,7 +17,7 @@ public class MyFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
-        return false;
+        return true;
     }
 
     @Override

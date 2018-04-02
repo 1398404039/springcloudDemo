@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(value = "server-zuul")
 public interface HelloService {
 
-    @RequestMapping(value = "/app1/hello")
+    @RequestMapping(value = "/app2/hello")
     String sayHello();
 }
