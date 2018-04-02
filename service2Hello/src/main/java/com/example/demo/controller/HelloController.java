@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HiController {
+public class HelloController {
 
     @Value("${server.port}")
     String port;
     @Value("${author}")
-    String author;@RequestMapping(value = "/hi",method = RequestMethod.GET)
+    String author;@RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String sayHi(){
-        return "This is Hi Service,port: " + port + "  and author: " + author;
+        return "This is Hello Service,port: " + port + "  and author: " + author;
     }
 }
